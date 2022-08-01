@@ -2,6 +2,8 @@
 :root {
     --primary-color: rgb(26, 148, 255);
     --button-color: rgb(13, 92, 182);
+    --content-background-color: #efefef;
+
     --header-width: 1270px;
 }
 
@@ -16,7 +18,6 @@ html {
     font-size: 14px;
     line-height: 1.15;
     text-size-adjust: 100%;
-    background-color: #efefef;
 }
 
 img {
@@ -224,22 +225,23 @@ ul {
 /* End Header */
 
 /* Begin Content */
+.content{
+    background-color: var(--content-background-color);
+}
 
 /* Category */
-
 .content__categories-wrapper {
-    width: 1240px;
-    height: 44px;
-    padding: 14px 0;
-    margin: 0 auto;
     background-color: white;
-    position: relative;
 }
 
 .content__categories {
+    width: 1240px;
+    height: 44px;
+    padding: 15px 0;
+    margin: 0 auto;
     overflow: hidden;
     white-space: nowrap;
-    height: 100%;
+    position: relative;
 }
 
 .content__categories-icon--wrapper {
@@ -294,4 +296,79 @@ ul {
 .content__categories-link:hover {
     color: rgb(56, 56, 61);
 }
+
+/* Begin Advertisement Slider */
+.content__advertisement{
+    margin: 15px auto;
+}
+
+.content__advertisement-slider{
+    width: 824px;
+    height: 274px;
+    position: relative;
+}
+
+.content__advertisement-slider:hover .content__advertisement-slider--btn{
+    opacity: 1;
+}
+
+.content__advertisement-slider--list{
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+}
+
+.content__advertisement-slider--item{
+    width: 100%;
+    height: 100%;
+    flex: 1 0 100%;
+}
+
+.content__advertisement-slider--item img{
+    width: 824px;
+    height: 274px;
+    border-radius: 4px;
+}
+
+.content__advertisement-slider--link{
+    display: block;
+}
+
+.content__advertisement-slider--btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.3;
+    background-color: transparent;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.content__advertisement-slider--btn.prev-btn{
+    left: 0;
+}
+
+.content__advertisement-slider--btn.prev-btn img{
+    transform: rotate(180deg);
+}
+
+.content__advertisement-slider--btn.next-btn{
+    right: 0;
+}
+
+.content__advertisement-slider--icon{
+    width: 32px;
+}
+
+.content__advertisement-image{
+    width: 408px;
+    height: 274px;
+}
+
+.content__advertisement-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
 /* End Content */
+
