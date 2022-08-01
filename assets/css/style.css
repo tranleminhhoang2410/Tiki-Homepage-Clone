@@ -17,6 +17,7 @@ html{
     font-family: Roboto,Helvetica,Arial,sans-serif;
     font-size: 14px;
     line-height: 1.15;
+    background-color: #efefef;
 }
 
 img{
@@ -27,6 +28,10 @@ img{
 a{
     text-decoration: none;
     background-color: transparent;
+}
+
+a:hover{
+    opacity: 0.95;
 }
 
 ul{
@@ -48,7 +53,6 @@ ul{
 
 .header:hover a{
     color: white;
-    opacity: 0.95;
 }
 
 .header__top{
@@ -219,3 +223,45 @@ ul{
     margin-right: 4px;
 }
 /* End Header */
+
+/* Begin Content */
+
+/* Category */
+.content__categories{
+    width: 1240px;
+    height: 44px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.content__categories-icon--wrapper {
+    width: 8px;
+    height: 14px;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+.content__categories-icon{
+    font-size: 16px;
+}
+
+.content__categories-list{
+    padding: 15px 0;
+    list-style-type: none; 
+}
+
+.content__categories-item{
+    padding: 0 15px;
+}
+
+.content__categories-link{
+    font-size: 14px;
+    color: rgb(56, 56, 61);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.content__categories-link:hover{
+    color: rgb(56, 56, 61);
+}
+/* End Content */
