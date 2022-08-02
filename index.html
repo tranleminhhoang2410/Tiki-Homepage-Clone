@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./assets/css/content/content.css">
     <link rel="stylesheet" href="./assets/css/content/categories.css">
     <link rel="stylesheet" href="./assets/css/content/advertisementSlider.css">
+    <link rel="stylesheet" href="./assets/css/content/advertisementPrice.css">
 </head>
 
 <body>
@@ -137,12 +138,68 @@
 
                     <div class="content__advertisement-image">
                         <a href="" class="content__advertisement-link">
-                            <img src="./assets/images/slider/advertisement.webp" alt="Advertisement">
+                            <img src="./assets/images/advertisementSlider/advertisement.webp" alt="Advertisement">
                         </a>
                     </div>
                 </div>
             </div>
             <!-- End Advertisement Slider -->
+
+            <!-- Begin Shock Price Today -->
+            <div class="app__container">
+                <div class="content__advertisement-price-wrapper d-flex justify-content-between">
+                    <div class="content__advertisement-price">
+                        <div
+                            class="content__advertisement-price--header d-flex align-items-center justify-content-between">
+                            <div class="content__advertisement-price--header-left d-flex align-items-center">
+                                <div class="content__advertisement-price--header-left__price">
+                                    <img src="./assets/images/advertisementPrice/giasoc.svg" alt="GiaSoc">
+                                    <img src="./assets/images/advertisementPrice/dealFlashIcon.svg" alt="FlashDeal">
+                                    <img src="./assets/images/advertisementPrice/homnay.svg" alt="HomNay">
+                                </div>
+                                <div class="content__advertisement-price--header-left__time d-flex align-items-center">
+                                    <span class="content__advertisement-price--header-left__time-hour">00</span>:
+                                    <span class="content__advertisement-price--header-left__time-minute">00</span>:
+                                    <span class="content__advertisement-price--header-left__time-second">00</span>
+                                </div>
+                            </div>
+                            <div class="content__advertisement-price--header-right">
+                                <div class="content__advertisement-price--header-showmore">
+                                    <a href="#">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__advertisement-price--body">
+
+                        </div>
+                    </div>
+                    <div class="content__advertisement-price--slider-wrapper position-relative">
+                        <div class="content__advertisement-price--slider">
+                            <div class="content__advertisement-price--slider-image">
+                                <img src="./assets/images/advertisementPrice/advertisementPriceSlider.webp"
+                                    alt="AdPrice">
+                            </div>
+                            <div class="content__advertisement-price--slider-video position-relative">
+                                <video poster="./assets/images/advertisementPrice/posterVideo.png">
+                                    <source src="./assets/videos/advertisementPrice/advertisementPriceSliderVideo.mp4"
+                                        type="video/mp4">
+                                </video>
+                                <div class="content__advertisement-price--slider-video__play-btn rounded-circle position-absolute top-50 start-50 translate-middle">
+                                    <img class="position-absolute top-50 start-50 translate-middle"
+                                        src="./assets/images/advertisementPrice/play-icon.png" alt="Play">
+                                </div>
+                                <div class="content__advertisement-price--slider-video__sound-btn rounded-circle position-absolute">
+                                    <img src="./assets/images/advertisementPrice/mute-sound-icon.png" alt="Sound">
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="content__advertisement-price--slider__dots-list position-absolute d-flex align-items-center">
+                            <!-- Dot items in slick function advertisementPrice.js -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End Shock Price Today -->
         </main>
         <!-- End Content -->
 
@@ -160,6 +217,7 @@
     <script src="./assets/js/header/header.js"></script>
     <script src="./assets/js/content/categories.js"></script>
     <script src="./assets/js/content/advertisementSlider.js"></script>
+    <script src="./assets/js/content/advertisementPrice.js"></script>
 </body>
 
 </html>
