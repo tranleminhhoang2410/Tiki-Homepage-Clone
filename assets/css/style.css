@@ -5,6 +5,7 @@
     --content-background-color: #efefef;
 
     --header-width: 1270px;
+    --slider-image-width: 824px;
 }
 
 * {
@@ -300,12 +301,13 @@ ul {
 /* Begin Advertisement Slider */
 .content__advertisement{
     margin: 15px auto;
+    overflow: hidden;
 }
 
 .content__advertisement-slider{
-    width: 824px;
+    width: var(--slider-image-width);
     height: 274px;
-    position: relative;
+    overflow: hidden;
 }
 
 .content__advertisement-slider:hover .content__advertisement-slider--btn{
@@ -315,7 +317,7 @@ ul {
 .content__advertisement-slider--list{
     width: 100%;
     list-style: none;
-    overflow: hidden;
+    transition: transform 0.25s linear;
 }
 
 .content__advertisement-slider--item{
@@ -325,8 +327,8 @@ ul {
 }
 
 .content__advertisement-slider--item img{
-    width: 824px;
-    height: 274px;
+    width: 100%;
+    height: 100%;
     border-radius: 4px;
 }
 
@@ -335,25 +337,14 @@ ul {
 }
 
 .content__advertisement-slider--btn{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     opacity: 0.3;
     background-color: transparent;
     z-index: 1;
     cursor: pointer;
 }
 
-.content__advertisement-slider--btn.prev-btn{
-    left: 0;
-}
-
 .content__advertisement-slider--btn.prev-btn img{
     transform: rotate(180deg);
-}
-
-.content__advertisement-slider--btn.next-btn{
-    right: 0;
 }
 
 .content__advertisement-slider--icon{
@@ -369,6 +360,25 @@ ul {
     width: 100%;
     height: 100%;
     border-radius: 4px;
+}
+
+.content__advertisement-slider--dot-list{
+    width: 100%;
+    list-style-type: none;
+    bottom: 10px;
+}
+
+.content__advertisement-slider--dot-item{
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+    background-color: white;
+    font-size: 0; /*Hide index of dot */
+    opacity: 0.5;
+}
+
+.content__advertisement-slider--dot-item.active{
+    opacity: 1;
 }
 /* End Content */
 
