@@ -1,0 +1,89 @@
+/* Begin Advertisement Slider */
+.content__advertisement{
+    margin: 15px auto;
+    overflow: hidden;
+}
+
+.content__advertisement-slider{
+    width: var(--slider-image-width);
+    height: 274px;
+    overflow: hidden;
+}
+
+.content__advertisement-slider:hover .content__advertisement-slider--btn{
+    opacity: 1;
+}
+
+.content__advertisement-slider--list{
+    width: 100%;
+    list-style: none;
+    transition: transform 0.25s linear;
+}
+
+.content__advertisement-slider--item{
+    width: 100%;
+    height: 100%;
+    flex: 1 0 100%;
+}
+
+.content__advertisement-slider--item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.content__advertisement-slider--link{
+    display: block;
+}
+
+.content__advertisement-slider--btn{
+    opacity: 0.3;
+    background-color: transparent;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.content__advertisement-slider--btn.prev-btn img{
+    transform: rotate(180deg);
+}
+
+.content__advertisement-slider--icon{
+    width: 32px;
+}
+
+.content__advertisement-image{
+    width: 408px;
+    height: 274px;
+}
+
+.content__advertisement-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.content__advertisement-slider--dot-list{
+    width: 100%;
+    list-style-type: none;
+    bottom: 10px;
+}
+
+.content__advertisement-slider--dot-list button{
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: white;
+    font-size: 0; /*Hide index of dot */
+    opacity: 0.5;
+}
+
+.content__advertisement-slider--dot-list .slick-active > button{
+    opacity: 1;
+}
+
+.content__advertisement-slider--dot-item.active{
+    opacity: 1;
+}
