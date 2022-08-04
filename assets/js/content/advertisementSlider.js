@@ -1,17 +1,6 @@
-nextIcon.onclick = () => {
-    categoriesList.style = `transform: translateX(-937px); transition: transform 0.5s ease-in-out 0s;`
-    nextIcon.classList.add('d-none')
-    prevIcon.classList.remove('d-none')
-}
-
-prevIcon.onclick = () => {
-    categoriesList.style = `transform: translateX(0); transition: transform 0.5s ease-in-out 0s;`
-    nextIcon.classList.remove('d-none')
-    prevIcon.classList.add('d-none')
-}
-
-//Handle render and change advertisement slider
+const sliderApiUrl = 'https://tiki.vn/api/shopping/v2/banners?group=home_banner_main_v2&trackity_id=fdadfc0c-1abc-e472-85b7-063881228a77'
 const advertisementSliderList = document.querySelector('.content__advertisement-slider--list')
+
 const advertisementSliderItems = [
     {
         id: 1,
