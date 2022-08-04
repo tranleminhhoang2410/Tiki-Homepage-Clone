@@ -16,6 +16,7 @@
 
 .content__advertisement-slider--list{
     width: 100%;
+    height: 100%;
     list-style: none;
     transition: transform 0.25s linear;
 }

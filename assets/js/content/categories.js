@@ -15,3 +15,14 @@ const renderCategoriesList = () => {
 }
 
 renderCategoriesList()
+
+nextIcon.onclick = () => {
+    categoriesList.style = `transform: translateX(-937px); transition: transform 0.5s ease-in-out 0s;`
+    nextIcon.classList.add('d-none')
+    prevIcon.classList.remove('d-none')
+}
+prevIcon.onclick = () => {
+    categoriesList.style = `transform: translateX(0); transition: transform 0.5s ease-in-out 0s;`
+    nextIcon.classList.remove('d-none')
+    prevIcon.classList.add('d-none')
+}

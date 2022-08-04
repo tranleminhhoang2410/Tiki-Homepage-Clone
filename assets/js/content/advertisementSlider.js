@@ -57,7 +57,7 @@ $(document).ready(function(){
         infinite: true,
         autoplay: true,
         autoplaySpeed: 3000, 
-        prevArrow: '<div class="content__advertisement-slider--btn slick-prev pull-left prev-btn position-absolute start-0 top-50 translate-middle-y"><img class="content__advertisement-slider--icon" src="https://salt.tikicdn.com/ts/upload/6b/59/c2/b61db5f1c32cfdc6d75e59d4fac2dbe8.png"></div>',
+        prevArrow: '<div class="content__advertisement-slider--btn prev-btn slick-prev pull-left position-absolute start-0 top-50 translate-middle-y"><img class="content__advertisement-slider--icon" src="https://salt.tikicdn.com/ts/upload/6b/59/c2/b61db5f1c32cfdc6d75e59d4fac2dbe8.png"></div>',
         nextArrow: '<div class="content__advertisement-slider--btn next-btn slick-next pull-right position-absolute top-50 end-0 translate-middle-y"><img class="content__advertisement-slider--icon" src="https://salt.tikicdn.com/ts/upload/6b/59/c2/b61db5f1c32cfdc6d75e59d4fac2dbe8.png"></div>',
         dots: true,
         dotsClass: 'content__advertisement-slider--dot-list d-flex justify-content-center position-absolute'
