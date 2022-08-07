@@ -6,7 +6,9 @@ const thuongHieuChinhHangApi = 'https://api.tiki.vn/shopping/v2/widgets/brand-st
 const danhMucNoiBatApi = 'https://tiki.vn/api/personalish/v1/blocks/categories?block_code=featured_categories&trackity_id=fdadfc0c-1abc-e472-85b7-063881228a77'
 
 //Fetch API of shock price product and render
-
+// fetch(productApiUrl)
+//     .then(respond => respond.json())
+//     .then(data => console.log(data))
 
 // Move Slider Shock Product  and Hide Arrows
 $(document).ready(function(){
@@ -14,8 +16,8 @@ $(document).ready(function(){
         slidesToShow: 5,
         slidesToScroll: 5,
         infinite: false,
-        prevArrow: '<div class="content__advertisement-price--body prev-btn top-0 start-0 position-absolute border-0"><img class="position-absolute" src="./assets/images/advertisementPrice/productArrow.png" alt="Prev Btn"></div>',
-        nextArrow: '<div class="content__advertisement-price--body next-btn top-0 end-0 position-absolute border-0"><img class="position-absolute" src="./assets/images/advertisementPrice/productArrow.png" alt="Next Btn"></div>',
+        prevArrow: '<div class="content__advertisement-price--body prev-btn top-0 start-0 position-absolute border-0"><img class="position-absolute" src="./assets/images/content/advertisementPrice/productArrow.png" alt="Prev Btn"></div>',
+        nextArrow: '<div class="content__advertisement-price--body next-btn top-0 end-0 position-absolute border-0"><img class="position-absolute" src="./assets/images/content/advertisementPrice/productArrow.png" alt="Next Btn"></div>',
     })
 
     productSlider.on('afterChange', function(event, slick, currentSlide) {  	

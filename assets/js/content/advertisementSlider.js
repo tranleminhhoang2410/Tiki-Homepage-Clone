@@ -4,37 +4,37 @@ const advertisementSliderList = document.querySelector('.content__advertisement-
 const advertisementSliderItems = [
     {
         id: 1,
-        src: './assets/images/advertisementSlider/slider1.webp'
+        src: './assets/images/content/advertisementSlider/slider1.webp'
     }, {
         id: 2,
-        src: './assets/images/advertisementSlider/slider2.webp'
+        src: './assets/images/content/advertisementSlider/slider2.webp'
     }, {
         id: 3,
-        src: './assets/images/advertisementSlider/slider3.webp'
+        src: './assets/images/content/advertisementSlider/slider3.webp'
     }, {
         id: 4,
-        src: './assets/images/advertisementSlider/slider4.webp'
+        src: './assets/images/content/advertisementSlider/slider4.webp'
     }, {
         id: 5,
-        src: './assets/images/advertisementSlider/slider5.webp'
+        src: './assets/images/content/advertisementSlider/slider5.webp'
     }, {
         id: 6,
-        src: './assets/images/advertisementSlider/slider6.webp'
+        src: './assets/images/content/advertisementSlider/slider6.webp'
     }, {
         id: 7,
-        src: './assets/images/advertisementSlider/slider7.webp'
+        src: './assets/images/content/advertisementSlider/slider7.webp'
     }, {
         id: 8,
-        src: './assets/images/advertisementSlider/slider8.webp'
+        src: './assets/images/content/advertisementSlider/slider8.webp'
     }, {
         id: 9,
-        src: './assets/images/advertisementSlider/slider9.webp'
+        src: './assets/images/content/advertisementSlider/slider9.webp'
     }, {
         id: 10,
-        src: './assets/images/advertisementSlider/slider10.webp'
+        src: './assets/images/content/advertisementSlider/slider10.webp'
     }, {
         id: 11,
-        src: './assets/images/advertisementSlider/slider11.webp'
+        src: './assets/images/content/advertisementSlider/slider11.webp'
     }
 ]
 

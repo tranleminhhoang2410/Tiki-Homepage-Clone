@@ -1,0 +1,21 @@
+.content__brand-advertisement{
+    height: 160px;
+}
+
+.content__brand-advertisement-link{
+    height: 100%;
+}
+
+.content__brand-advertisement-img{
+    height: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.content__brand-advertisement-img.side-brand{
+    width: 204px;
+}
+
+.content__brand-advertisement-img.center-brand{
+    width: 800px;
+}
