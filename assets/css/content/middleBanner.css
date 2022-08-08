@@ -1,0 +1,12 @@
+.content__middle-banners{
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 15px;
+}
+
+.content__middle-banner--link{
+    width: 394px;
+    height: 150px;
+    background-color: rgb(232, 232, 232);
+    border-radius: 20px;
+}
