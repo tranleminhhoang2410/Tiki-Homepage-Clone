@@ -66,7 +66,6 @@
 /* Product */
 
 .content__advertisement-price--body__product-list{
-    list-style-type: none;
     height: 100%;
 }
 
@@ -200,7 +199,6 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 16px;
-    list-style-type: none;
 }
 
 .content__advertisement-price--slider__dots-list li {

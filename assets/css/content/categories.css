@@ -39,7 +39,6 @@
 }
 .content__categories-list {
     overflow: hidden;
-    list-style-type: none;
     font-size: 0px; /*Remove space between inline-block elements*/
     /* line-height: 1.15; */
 }
