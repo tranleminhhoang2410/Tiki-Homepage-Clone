@@ -12,30 +12,13 @@ const danhMucNoiBatApi = 'https://tiki.vn/api/personalish/v1/blocks/categories?b
 
 // Move Slider Shock Product  and Hide Arrows
 $(document).ready(function(){
-    var productSlider = $('.content__advertisement-price--body__product-list').slick({  
+    $('.content__advertisement-price--body__product-list').slick({  
         slidesToShow: 5,
         slidesToScroll: 5,
         infinite: false,
-        prevArrow: '<div class="content__advertisement-price--body prev-btn top-0 start-0 position-absolute border-0"><img class="position-absolute" src="./assets/images/content/advertisementPrice/productArrow.png" alt="Prev Btn"></div>',
-        nextArrow: '<div class="content__advertisement-price--body next-btn top-0 end-0 position-absolute border-0"><img class="position-absolute" src="./assets/images/content/advertisementPrice/productArrow.png" alt="Next Btn"></div>',
+        prevArrow: '<div class="content__advertisement-price--body prev-btn top-0 start-0 position-absolute border-0"><img class="position-absolute" src="./assets/images/global/arrows/circleArrow.png" alt="Prev Btn"></div>',
+        nextArrow: '<div class="content__advertisement-price--body next-btn top-0 end-0 position-absolute border-0"><img class="position-absolute" src="./assets/images/global/arrows/circleArrow.png" alt="Next Btn"></div>',
     })
-
-    productSlider.on('afterChange', function(event, slick, currentSlide) {  	
-        // console.log(currentSlide);
-            //If we're on the first slide hide the Previous button and show the Next
-        if (currentSlide === 0) {
-            $('.slick-prev').hide();
-            $('.slick-next').show();
-        }
-        else {
-            $('.slick-prev').show();
-        }
-          
-        //If we're on the last slide hide the Next button.
-        if (slick.slideCount === currentSlide + 1) {
-            $('.slick-next').hide();
-        }
-    });
 })
 
 
