@@ -2,7 +2,7 @@
 :root {
     --primary-color: rgb(26, 148, 255);
     --button-color: rgb(13, 92, 182);
-    --content-background-color: #efefef;
+    --content-background-color: rgb(245, 245, 250);
 
     --header-width: 1270px;
     --slider-image-width: 824px;
