@@ -52,11 +52,11 @@ let isMute = true
 //Handle play video
 playBtn.onclick = () => {
     if(!isPlaying){
-        playBtnImg.src = './assets/images/advertisementPrice/pause-icon.png'
+        playBtnImg.src = './assets/images/content/advertisementPrice/pause-icon.png'
         video.play()
         isPlaying = true
     }else{
-        playBtnImg.src = './assets/images/advertisementPrice/play-icon.png'
+        playBtnImg.src = './assets/images/content/advertisementPrice/play-icon.png'
         video.pause()
         isPlaying = false
     }
