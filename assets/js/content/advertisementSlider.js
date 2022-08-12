@@ -1,4 +1,3 @@
-const sliderApiUrl = 'https://tiki.vn/api/shopping/v2/banners?group=home_banner_main_v2&trackity_id=fdadfc0c-1abc-e472-85b7-063881228a77'
 const advertisementSliderList = document.querySelector('.content__advertisement-slider--list')
 
 const advertisementSliderItems = [

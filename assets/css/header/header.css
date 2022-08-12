@@ -31,7 +31,6 @@
     cursor: pointer;
     width: 120px;
     background-color: var(--button-color);
-    margin-right: 8px;
     height: 40px;
     border-radius: 0px 2px 2px 0px;
     color: white;

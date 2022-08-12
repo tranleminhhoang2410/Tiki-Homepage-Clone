@@ -1,13 +1,13 @@
 //Handle show more button
 $(document).ready(function(){
     var list = $(".content__suggestion-today--product__item");
-    var numToShow = 6;
+    var numToShow = 36;
     var button = $(".content__suggestion-today__seermore-btn");
     var numInList = list.length;
     list.hide();
     if (numInList > numToShow) {
-      button.show();
-    }
+        button.show();
+    }    
     list.slice(0, numToShow).show();
 
     button.click(function(){
@@ -17,6 +17,6 @@ $(document).ready(function(){
         if (nowShowing >= numInList) {
           button.hide();
         }
-    });
+    }); 
 
 });
