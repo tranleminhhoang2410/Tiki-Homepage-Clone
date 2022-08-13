@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="./assets/css/content/middleBanner.css">
     <link rel="stylesheet" href="./assets/css/content/suggestionsToday.css">
     <link rel="stylesheet" href="./assets/css/footer/footer.css">
+    <link rel="stylesheet" href="./assets/css/modal/authModal.css">
 </head>
 
 <body>
@@ -60,8 +61,8 @@
                         <div class="header__auth d-flex align-items-center">
                             <img class="header__profile-icon" src="./assets/images/header/Profile-Icon.png">
                             <div class="header__auth-info d-flex flex-column">
-                                <span class="header__auth-action">Đăng nhập / Đăng ký</span>
-                                <span class="header__auth-account">
+                                <span class="header__auth-action" data-bs-toggle="modal" data-bs-target="#authModal">Đăng nhập / Đăng ký</span>
+                                <span class="header__auth-account" data-bs-toggle="modal" data-bs-target="#authModal">
                                     Tài khoản
                                     <img class="header__auth-account--menu-icon"
                                         src="https://salt.tikicdn.com/ts/upload/d7/d4/a8/34939af2da1ceeeae9f95b7485784233.png">
@@ -114,17 +115,15 @@
             <!-- Begin Categories Slider -->
             <div class="content__categories-wrapper">
                 <div class="content__categories overflow-hidden">
-                    
-                        <span class="content__categories-icon--wrapper icon-prev d-none">
-                            <i class="content__categories-icon d-block fa-solid fa-chevron-left"></i>
-                        </span>
-                        <ul class="content__categories-list">
-                            <!-- Render list in categories.js -->
-                        </ul>
-    
-                        <span class="content__categories-icon--wrapper icon-next">
+                    <span class="content__categories-icon--wrapper icon-prev d-none">
+                        <i class="content__categories-icon d-block fa-solid fa-chevron-left"></i>
+                    </span>
+                    <ul class="content__categories-list">
+                        <!-- Render list in categories.js -->
+                    </ul>    
+                    <span class="content__categories-icon--wrapper icon-next">
                             <i class="content__categories-icon d-block fa-solid fa-chevron-right"></i>
-                        </span>
+                    </span>
                     
                 </div>
             </div>
@@ -4397,6 +4396,229 @@
                 </div>
         </footer>
     </div>
+
+    <!-- Modal -->
+    <!-- Auth Modal -->
+    <div class="auth-modal modal fade" id="authModal" tabindex="-1" aria-labelledby="authModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content flex-row">
+                <button type="button" class="close-btn position-absolute" data-bs-dismiss="modal">
+                    <img class="close-img" src="./assets/images/modal/close-btn.png" alt="close">
+                </button>
+                <div class="modal-content__left-wrapper">
+                    <div class="modal-content__left">
+                        <div class="modal-content__left-heading">
+                            <h4 class="modal-content__left-title">Xin chào,</h4>
+                            <p class="modal-content__left-suggestion">Đăng nhập hoặc Tạo tài khoản</p>
+                        </div>
+                        <form id="authForm" class="modal-content__left-form">
+                            <div class="modal-content__left-form__input-wrapper position-relative">
+                                <input class="modal-content__left-form__input" value="" type="tel" name="tel" placeholder="Số điện thoại">
+                            </div>
+                            <button type="submit" class="modal-content__left-form__btn">Tiếp tục</button>
+                        </form>
+                        <p class="modal-content__left-login--with--mail text-center" data-bs-toggle="modal" data-bs-target="#emailModal">Đăng nhập bằng email</p>
+                        <div class="modal-content__left-social--login text-center">
+                            <p class="modal-content__left-social--heading position-relative">
+                                <span class="position-relative d-inline-block"> Hoặc tiếp tục bằng</span>
+                            </p>
+                            <ul class="modal-content__left-social--list d-flex align-items-center justify-content-center">
+                                <li class="modal-content__left-social--item">
+                                    <a href="" class="modal-content__left-social--link">
+                                        <img src="./assets/images/modal/facebook.png" alt="" class="modal-content__left-social--img">
+                                    </a>
+                                </li>
+                                <li class="modal-content__left-social--item">
+                                    <a href="" class="modal-content__left-social--link">
+                                        <img src="./assets/images/modal/google.png" alt="" class="modal-content__left-social--img">
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="modal-content__left-note">Bằng việc tiếp tục, bạn đã chấp nhận <a class="d-inline-block text-decoration-underline" href="#">điều khoản sử dụng</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-content__right-wrapper d-flex flex-column align-items-center justify-content-center">
+                    <img src="./assets/images/modal/BuyAtTiki.png" alt="mua-sam-tai-tiki" class="modal-content__right-img">
+                    <div class="modal-content__right text-center">
+                        <h4>Mua sắm tại Tiki</h4>
+                        <span>Siêu ưu đãi mỗi ngày</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Auth Modal -->
+
+    <!-- Email Modal -->
+    <div class="auth-modal modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content flex-row">
+                <button type="button" class="close-btn position-absolute" data-bs-dismiss="modal">
+                    <img class="close-img" src="./assets/images/modal/close-btn.png" alt="close">
+                </button>
+                <div class="modal-content__left-wrapper">
+                    <div class="modal-content__left">
+                        <button class="back-btn" data-bs-toggle="modal" data-bs-target="#authModal">
+                            <img src="./assets/images/modal/back-btn.png" alt="back">
+                        </button>
+                        <div class="modal-content__left-heading">
+                            <h4 class="modal-content__left-title">Đăng nhập bằng email</h4>
+                            <p class="modal-content__left-suggestion">Nhập email và mật khẩu tài khoản Tiki</p>
+                        </div>
+                        <form action="#" class="modal-content__left-form">
+                            <div class="modal-content__left-form__input-wrapper position-relative">
+                                <input class="modal-content__left-form__input" value="" type="email" name="email" placeholder="acb@email.com">
+                            </div>
+                            <div class="modal-content__left-form__input-wrapper position-relative">
+                                <input class="modal-content__left-form__input" value="" type="password" name="password" placeholder="Mật khẩu">
+                                <span class="modal-content__left-form__show-password position-absolute end-0">Hiện</span>
+                            </div>
+                            <button class="modal-content__left-form__btn">Đăng nhập</button>
+                        </form>
+                        <p class="modal-content__left-forgot-password" data-bs-toggle="modal" data-bs-target="#forgotModal">Quên mật khẩu?</p>
+                        <p class="modal-content__left-account">Chưa có tài khoản? <span class="modal-content__left-create-account" data-bs-toggle="modal" data-bs-target="#createAccountModal">Tạo tài khoản</span></p>
+                    </div>
+                </div>
+                <div class="modal-content__right-wrapper d-flex flex-column align-items-center justify-content-center">
+                    <img src="./assets/images/modal/BuyAtTiki.png" alt="mua-sam-tai-tiki" class="modal-content__right-img">
+                    <div class="modal-content__right text-center">
+                        <h4>Mua sắm tại Tiki</h4>
+                        <span>Siêu ưu đãi mỗi ngày</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Email Modal -->
+
+    <!-- Forgot Modal -->
+    <div class="auth-modal modal fade" id="forgotModal" tabindex="-1" aria-labelledby="forgotModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content flex-row">
+                <button type="button" class="close-btn position-absolute" data-bs-dismiss="modal">
+                    <img class="close-img" src="./assets/images/modal/close-btn.png" alt="close">
+                </button>
+                <div class="modal-content__left-wrapper">
+                    <div class="modal-content__left">
+                        <button class="back-btn" data-bs-toggle="modal" data-bs-target="#passwordModal">
+                            <img src="./assets/images/modal/back-btn.png" alt="back">
+                        </button>
+                        <div class="modal-content__left-heading">
+                            <h4 class="modal-content__left-title">Quên mật khẩu?</h4>
+                            <p class="modal-content__left-suggestion">Vui lòng nhập thông tin tài khoản để lấy lại mật khẩu</p>
+                        </div>
+                        <form action="#" class="modal-content__left-form">
+                            <div class="modal-content__left-form__input-wrapper position-relative">
+                                <input class="modal-content__left-form__input" value="" type="text" name="email-or-phone" placeholder="Số điện thoại/ Email">
+                            </div>
+                            <button class="modal-content__left-form__btn">Lấy lại mật khẩu</button>
+                        </form>
+                        <span class="modal-content__left-form__change-phone">Đổi số điện thoại? Liên hệ Hotline 1900-6035</span>
+                    </div>
+                </div>
+                <div class="modal-content__right-wrapper d-flex flex-column align-items-center justify-content-center">
+                    <img src="./assets/images/modal/BuyAtTiki.png" alt="mua-sam-tai-tiki" class="modal-content__right-img">
+                    <div class="modal-content__right text-center">
+                        <h4>Mua sắm tại Tiki</h4>
+                        <span>Siêu ưu đãi mỗi ngày</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Forgot Modal -->
+
+    <!-- Password Modal -->
+    <div class="auth-modal modal fade" id="passwordModal" tabindex="-1" aria-labelledby="passwordModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content flex-row">
+                <button type="button" class="close-btn position-absolute" data-bs-dismiss="modal">
+                    <img class="close-img" src="./assets/images/modal/close-btn.png" alt="close">
+                </button>
+                <div class="modal-content__left-wrapper">
+                    <div class="modal-content__left">
+                        <button class="back-btn" data-bs-toggle="modal" data-bs-target="#authModal">
+                            <img src="./assets/images/modal/back-btn.png" alt="back">
+                        </button>
+                        <div class="modal-content__left-heading">
+                            <h4 class="modal-content__left-title">Nhập mật khẩu</h4>
+                        </div>
+                        <form action="#" class="modal-content__left-form">
+                            <div class="modal-content__left-form__input-wrapper position-relative">
+                                <input class="modal-content__left-form__input" value="" type="password" name="password" placeholder="Mật khẩu">
+                            </div>
+                            <button class="modal-content__left-form__btn">Đăng nhập</button>
+                        </form>
+                        <span class="modal-content__left-form__forgot-password" data-bs-toggle="modal" data-bs-target="#forgotModal">Quên mật khẩu?</span>
+                    </div>
+                </div>
+                <div class="modal-content__right-wrapper d-flex flex-column align-items-center justify-content-center">
+                    <img src="./assets/images/modal/BuyAtTiki.png" alt="mua-sam-tai-tiki" class="modal-content__right-img">
+                    <div class="modal-content__right text-center">
+                        <h4>Mua sắm tại Tiki</h4>
+                        <span>Siêu ưu đãi mỗi ngày</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Password Modal -->
+
+    <!-- Create Account Modal -->
+    <div class="auth-modal modal fade" id="createAccountModal" tabindex="-1" aria-labelledby="createAccountModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content flex-row">
+                <button type="button" class="close-btn position-absolute" data-bs-dismiss="modal">
+                    <img class="close-img" src="./assets/images/modal/close-btn.png" alt="close">
+                </button>
+                <div class="modal-content__left-wrapper">
+                    <div class="modal-content__left">
+                        <button class="back-btn" data-bs-toggle="modal" data-bs-target="#emailModal">
+                            <img src="./assets/images/modal/back-btn.png" alt="back">
+                        </button>
+                        <div class="modal-content__left-heading">
+                            <h4 class="modal-content__left-title">Tạo tài khoản</h4>
+                            <p class="modal-content__left-suggestion">Vui lòng nhập số điện thoại</p>
+                        </div>
+                        <form action="#" id="createAccountForm" class="modal-content__left-form">
+                            <div class="modal-content__left-form__input-wrapper position-relative">
+                                <input class="modal-content__left-form__input" value="" type="tel" name="tel" placeholder="Số điện thoại">
+                            </div>
+                            <button class="modal-content__left-form__btn">Tiếp tục</button>
+                        </form>
+                        <div class="modal-content__left-social--login text-center">
+                            <p class="modal-content__left-social--heading position-relative">
+                                <span class="position-relative d-inline-block"> Hoặc tiếp tục bằng</span>
+                            </p>
+                            <ul class="modal-content__left-social--list d-flex align-items-center justify-content-center">
+                                <li class="modal-content__left-social--item">
+                                    <a href="" class="modal-content__left-social--link">
+                                        <img src="./assets/images/modal/facebook.png" alt="" class="modal-content__left-social--img">
+                                    </a>
+                                </li>
+                                <li class="modal-content__left-social--item">
+                                    <a href="" class="modal-content__left-social--link">
+                                        <img src="./assets/images/modal/google.png" alt="" class="modal-content__left-social--img">
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="modal-content__left-note">Bằng việc tiếp tục, bạn đã chấp nhận <a class="d-inline-block text-decoration-underline" href="#">điều khoản sử dụng</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-content__right-wrapper d-flex flex-column align-items-center justify-content-center">
+                    <img src="./assets/images/modal/BuyAtTiki.png" alt="mua-sam-tai-tiki" class="modal-content__right-img">
+                    <div class="modal-content__right text-center">
+                        <h4>Mua sắm tại Tiki</h4>
+                        <span>Siêu ưu đãi mỗi ngày</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Create Account Modal -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
@@ -4406,12 +4628,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" 
+        integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"></script>
     <script src="./assets/js/header/header.js"></script>
     <script src="./assets/js/content/categories.js"></script>
     <script src="./assets/js/content/advertisementSlider.js"></script>
     <script src="./assets/js/content/advertisementPrice.js"></script>
     <script src="./assets/js/content/authenticBrand.js"></script>
     <script src="./assets/js/content/suggestionToday.js"></script>
+    <script src="./assets/js/modal/authModal.js"></script>
 </body>
 
 </html>
